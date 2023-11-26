@@ -2,6 +2,9 @@
 include_once $_SERVER["DOCUMENT_ROOT"]."/_includes/_config.php";
 include_once $_SERVER["DOCUMENT_ROOT"]."/_includes/_PHPExcel/PHPExcel.php";
 
+// _includes/_PHPExcel/PHPExcel 폴더는 빈 폴더로 업로드 됨.
+// 참고: https://hongpage.kr/77
+
 try {
     $pdo = new PDO(
         "mysql:host="._db_address.";dbname="._db_name.";charset=utf8",
